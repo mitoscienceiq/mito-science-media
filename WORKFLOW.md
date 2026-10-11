@@ -17,11 +17,14 @@ Language: Iraqi Arabic, simple, accurate. Always cite the study on screen and in
 - Present each option: title, journal + date, design & sample size, the one-line hook, why it fits the page, and caveats. Ask the owner to pick one. Wait for the choice.
 
 ## Step 2 — script (after the owner picks)
-- 45–60 s, hook in the first 3 s, ~9 numbered segments, one idea per segment (each segment = one scene).
+- 30–45 s total (NOT longer — first Reel averaged only 3.8 s watch time on a 68 s video). ~6–8 numbered segments, one idea per segment (each segment = one scene).
+- Segment 1 = the hook: open with the surprising RESULT itself as a bold claim (e.g. "أوزمبيك ما ياكل عضلاتك… بس بشرط"), not a generic question. Max ~2.5 s.
+- Second-to-last segment: a question to the audience to drive comments (e.g. "تاخذ GLP-1؟ اكتب بالتعليقات").
 - Write numbers as spoken words. End with: "تابعوا ميتوكوندريا."
 - Tell the owner: leave ~1 s silence between segments; on a mistake pause 3 s and redo the whole segment; record in iPhone Voice Memos (Lossless) + Enhance Recording.
 
 ## Step 3 — visuals
+- Frame 1 must already show the hook text and a strong visual (no fade-in on the first scene; use t_in=-1 as in the template).
 - Copy `tools/example_glp1_video.py` to a new file and rewrite the scenes for the new study (same style: dark navy, teal/lime/gold, Cairo font, animated bars for numbers, source line on number scenes, avatar outro).
 - Render stills first and look at them (check RTL text, overlaps), then send a silent preview if useful.
 
@@ -35,4 +38,10 @@ Language: Iraqi Arabic, simple, accurate. Always cite the study on screen and in
 - Commit the mp4 to `videos/YYYY-MM-DD-slug.mp4` and push to `main`.
 - Schedule with Metricool (brand blogId 7350660, timezone Asia/Baghdad), default 7:00 PM, providers tiktok + instagram (REEL) + youtube (short, SCIENCE_TECHNOLOGY, not made for kids).
   Media URL: `https://raw.githubusercontent.com/mitoscienceiq/mito-science-media/<commit-sha>/videos/<file>.mp4`. TikTok needs `tiktokData.title`.
+- Also put the audience question in the caption.
+- TikTok: account is restricted after a spam flag (Oct 2026). Do NOT schedule TikTok via Metricool and never operate the TikTok account from a browser. Send the owner the final mp4 + caption to upload manually from the TikTok iPhone app once the restriction is lifted.
 - Append the topic to `published.md`.
+
+## Step 6 — learn from results
+- Before proposing new studies, pull Metricool analytics for the previous posts (Instagram reels: views IGRE23, reach IGRE11, avg watch time IGRE24, view rate IGRE28, likes/comments/saves/shares; YouTube published-in-range: YTVP06/08/09/11/12 — YouTube data lags 24–48 h).
+- Give the owner a 3-line summary and adjust hooks/length accordingly.

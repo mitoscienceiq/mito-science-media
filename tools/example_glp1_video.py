@@ -116,11 +116,11 @@ h2 = text_img("وخايف تخسر عضلاتك؟", 100, GOLD, "Black")
 syr = None
 @scene(0, 4.2)
 def s1(f, t):
-    place(f, h1, W / 2, 640, 0.1, t, fade_out_at=3.9)
-    place(f, h2, W / 2, 950, 0.9, t, fade_out_at=3.9)
+    place(f, h1, W / 2, 640, -1, t, fade_out_at=3.9)  # hook visible on frame 1
+    place(f, h2, W / 2, 950, -1, t, fade_out_at=3.9)
     s = 1 + 0.06 * math.sin(t * 6)
     big = text_img("؟", 260, CORAL, "Black")
-    if t > 1.6: place(f, big.resize((int(big.width * s), int(big.height * s))), W / 2, 1250, 1.6, t, fade_out_at=3.9)
+    place(f, big.resize((int(big.width * s), int(big.height * s))), W / 2, 1250, -1, t, fade_out_at=3.9)
 
 # 2 context
 c1 = text_img("أدوية GLP-1 مثل سيماغلوتايد", 76, WHITE, "Bold")
