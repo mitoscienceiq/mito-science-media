@@ -36,8 +36,8 @@ Language: Iraqi Arabic, simple, accurate. Always cite the study on screen and in
 
 ## Step 5 — publish (only after the owner says "انشر")
 - Commit the mp4 to `videos/YYYY-MM-DD-slug.mp4` and push to `main`.
-- Schedule with Metricool (brand blogId 7350660, timezone Asia/Baghdad), default 7:00 PM, providers tiktok + instagram (REEL) + youtube (short, SCIENCE_TECHNOLOGY, not made for kids).
-  Media URL: `https://raw.githubusercontent.com/mitoscienceiq/mito-science-media/<commit-sha>/videos/<file>.mp4`. TikTok needs `tiktokData.title`.
+- Schedule with Metricool (brand blogId 7350660, timezone Asia/Baghdad), default 7:00 PM, providers instagram (REEL) + youtube (short, SCIENCE_TECHNOLOGY, not made for kids).
+  Media URL: `https://raw.githubusercontent.com/mitoscienceiq/mito-science-media/<commit-sha>/videos/<file>.mp4`. (When TikTok is re-enabled later, it needs `tiktokData.title`.)
 - Also put the audience question in the caption.
 - TikTok: account is restricted after a spam flag (Oct 2026). Do NOT schedule TikTok via Metricool and never operate the TikTok account from a browser. Send the owner the final mp4 + caption to upload manually from the TikTok iPhone app once the restriction is lifted.
 - Append the topic to `published.md`.
